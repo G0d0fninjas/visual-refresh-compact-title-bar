@@ -55,6 +55,13 @@
         display: var(--vr-header-snippet-winbuttons);
     }
 
+    /* inbox, help, window buttons variables */
+    & div.c38106a3f0c3ca76-trailing {
+        background: none;
+        border: none;
+        height: var(--custom-channel-header-height);
+    }
+
     div._5e434347c823b592-base {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
@@ -150,18 +157,10 @@
             }
         }
 
-        /* TODO: find the actual class name */
         &:has(> div._6e2b9359c6f84cfd-notice) {
             & > div.c38106a3f0c3ca76-bar {
                 top: anchor(top);
             }
-        }
-
-        /* inbox, help, window buttons variables */
-        & div.c38106a3f0c3ca76-trailing {
-            background: none;
-            border: none;
-            height: var(--custom-channel-header-height);
         }
 
         /* checks if a thread is opened on the side of your screen */
