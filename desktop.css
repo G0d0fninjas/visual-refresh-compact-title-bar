@@ -15,7 +15,8 @@
     /* adds padding to friend list page */
     main._133bf5eea8e33a34-container,
     /* adds padding to thread sidebar */
-    div._01ae244280823725-chatLayerWrapper {
+    div._01ae244280823725-chatLayerWrapper,
+    div.e1147ecfa724a72a-detailHeaderButtonsContainer {
         & section._9293f6b2fc12398a-container {
             padding-right: var(--vr-header-snippet-space);
         }
@@ -199,16 +200,15 @@
         z-index: -1;
     }
 
-    /* TODO: try finding these classes */
-    .profileThemedContainer__656be .topRow__34940 {
+    ._656be05658eed04d-profileThemedContainer ._34940b51cd19b69f-topRow {
         align-items: end;
         padding-bottom: 0;
 
-        & .closeAction__34940 {
+        & ._34940b51cd19b69f-closeAction {
             -webkit-app-region: no-drag;
         }
 
-        & .memberNameContainer__34940 {
+        & ._34940b51cd19b69f-memberNameContainer {
             padding-bottom: 12px;
         }
     }
