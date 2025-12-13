@@ -67,7 +67,7 @@
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
         /* TODO: find the actual class name */
-        &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing [class*="_49676"][class*="-updateIconForeground"]) {
+        &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path._496769951eb140fe-updateIconForeground) {
             --update-padding: 44px;
         }
         &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing .vc-toolbox-btn) {
