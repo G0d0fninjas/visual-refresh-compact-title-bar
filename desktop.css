@@ -248,4 +248,9 @@
     & ._8a7fc664acf53af6-iconButton {
         -webkit-app-region: no-drag;
     }
+
+    /* allows "follow" button for announcements to be clickable */
+    div.f75fb00fb7356cbe-followButton > button{
+        -webkit-app-region: no-drag;
+    }
 }
