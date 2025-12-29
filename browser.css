@@ -24,7 +24,7 @@
         padding-right: var(--vr-header-snippet-space);
     }
 
-    * livestream video controls */
+    /* livestream video controls */
     div.bfe55a0aaaf62375-videoControls div._495084e7a0006942-subtitleContainer {
         padding-right: calc(var(--vr-header-snippet-space) - 20px);
     }
