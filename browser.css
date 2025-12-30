@@ -78,7 +78,7 @@
 
         /* removes extra padding to chat icon on vc */
         div._495084e7a0006942-subtitleContainer:has(button._201d5e8a3c09670a-button[aria-label^='Show Chat']) {
-            margin-right: calc(-200px + var(--vencord-padding) + var(--checkpoint-padding)) !important;
+            margin-right: calc(-75px + var(--vencord-padding) + var(--checkpoint-padding)) !important;
         }
 
         /* checks if you are searching for a server/app */
