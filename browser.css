@@ -24,6 +24,11 @@
         padding-right: var(--vr-header-snippet-space);
     }
 
+    /* livestream video controls */
+    div.bfe55a0aaaf62375-videoControls div._495084e7a0006942-subtitleContainer {
+        padding-right: calc(var(--vr-header-snippet-space) - 20px);
+    }
+
     div._5e434347c823b592-base {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
