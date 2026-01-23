@@ -147,6 +147,20 @@
         }
     }
 
+    /* removes the extra padding given to the popout menu on vcs */
+    div._0bd4a058c09118e7-popout {
+        /* fixes padding issue with the close chat button on popout page */
+        section._9293f6b2fc12398a-container > div._9293f6b2fc12398a-upperContainer {
+            /* both areas have slightly different padding for some reason */
+            :has([aria-label="Show Chat"]) {
+                margin-right: -64px;
+            }
+            :has([aria-label="Close"]) {
+                margin-right: -96px;
+            }
+        }
+    }
+
     /* checks if discord is on a server page */
     :not(:has(div_5e434347c823b592-page > div.f75fb00fb7356cbe-chat)) div._5e434347c823b592-base > div.c38106a3f0c3ca76-bar {
         right: 0 !important;
