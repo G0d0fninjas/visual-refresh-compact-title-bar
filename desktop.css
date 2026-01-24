@@ -11,65 +11,65 @@
     --checkpoint-padding: 0px;
 
     /* adds padding to chat pages */
-    div.f75fb00fb7356cbe-chat:not(.f75fb00fb7356cbe-threadSidebarOpen),
+    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
     /* adds padding to friend list page */
-    main._133bf5eea8e33a34-container,
+    main.container__133bf,
     /* adds padding to thread sidebar */
-    div._01ae244280823725-chatLayerWrapper {
-        & section._9293f6b2fc12398a-container {
+    div.chatLayerWrapper__01ae2 {
+        & section.container__9293f {
             padding-right: var(--vr-header-snippet-space);
         }
     }
 
     /* adds padding to servers/app pages */
-    div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-overlay {
+    div.headerBar__8a7fc.overlay__8a7fc {
         padding-right: var(--vr-header-snippet-space);
 
-        ._65d410cfafd026bc-tab,
-        ._1ac1c54c56e5807c-searchBar {
+        .tab__65d41,
+        .searchBar__1ac1c {
             -webkit-app-region: no-drag;
         }
     }
 
-    div._5e434347c823b592-page {
-        &:not(:has(> div.f75fb00fb7356cbe-chat)) {
+    div.page__5e434 {
+        &:not(:has(> div.chat_f75fb0)) {
             anchor-name: --vr-header-snippet;
         }
 
-        & > div.f75fb00fb7356cbe-chat {
+        & > div.chat_f75fb0 {
             anchor-name: --vr-header-snippet;
         }
     }
 
     /* shows or removes window buttons depending on variable */
-    div.c38106a3f0c3ca76-winButtons {
+    div.winButtons_c38106 {
         display: var(--vr-header-snippet-winbuttons);
     }
 
     /* inbox, help, window buttons variables */
-    div.c38106a3f0c3ca76-trailing {
+    div.trailing_c38106 {
         background: none;
         border: none;
         height: var(--custom-channel-header-height);
 
         /* adds padding to window buttons on settings/picture pages */
-        & > div.c38106a3f0c3ca76-winButtons:not(.c38106a3f0c3ca76-winButtonsWithDivider) {
+        & > div.winButtons_c38106:not(.winButtonsWithDivider_c38106) {
             padding-right: var(--vr-header-snippet-button-padding);
         }
     }
 
-    div._5e434347c823b592-base {
+    div.base__5e434 {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
         /* TODO: find the actual class name */
-        &:has(> div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path._496769951eb140fe-updateIconForeground) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 path.updateIconForeground__49676) {
             --update-padding: 44px;
         }
-        &:has(> div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing .vc-toolbox-btn) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
             --vencord-padding: 44px;
         }
-        &:has(> div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path.f1f2b13d058fc458-iconForeground) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
             --checkpoint-padding: 44px;
         }
 
@@ -78,63 +78,63 @@
         --vr-header-snippet-total-padding: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding));
 
         /* adds padding to app detail page */
-        div.e1147ecfa724a72a-detailHeaderButtonsContainer {
+        div.detailHeaderContainer_e1147e {
           padding-right: calc(var(--vr-header-snippet-total-padding) - 12px);
         }
 
-        div.f75fb00fb7356cbe-subtitleContainer,
-        main._133bf5eea8e33a34-container {
+        div.subtitleContainer_f75fb0,
+        main.container__133bf {
             /* adds padding to entire top container */
-            & section._9293f6b2fc12398a-container {
+            & section.container__9293f {
                 padding-right: var(--vr-header-snippet-total-padding);
             }
         }
 
         /* checks if thread sidebar is open */
-        &:has(div > div._01ae244280823725-chatLayerWrapper) {
+        &:has(div > div.chatLayerWrapper__01ae2) {
             /* removes extra padding given to search bar */
-            div.f75fb00fb7356cbe-subtitleContainer > section._9293f6b2fc12398a-container {
+            div.subtitleContainer_f75fb0 > section.container__9293f {
                 padding-right: 8px;
             }
 
             /* adds padding to the thread buttons */
-            div._01ae244280823725-container > section._9293f6b2fc12398a-container {
+            div.container__01ae2 > section.container__9293f {
                 padding-right: var(--vr-header-snippet-total-padding);
             }
 
             /* adds padding to the vc chat page in fullscreen */
-            &:has(> div._5e434347c823b592-content > div._5e434347c823b592-hidden) div._01ae244280823725-container > section._9293f6b2fc12398a-container {
+            &:has(> div.content__5e434 > div.hidden__5e434) div.container__01ae2 > section.container__9293f {
                 padding-right: var(--vr-header-snippet-button-padding);
             }
         }
 
         /* adds extra spacing to the orbs button on orbs/shop page */
-        div._44ee9ab6d1ca72b4-container {
+        div.container__44ee9 {
             padding-right: var(--vr-header-snippet-extra-padding);
         }
 
         /* livestream header on vc */
-        div._9293f6b2fc12398a-upperContainer {
-            div._495084e7a0006942-toolbar {
+        div.upperContainer__9293f {
+            div.toolbar__49508 {
                 margin-right: -214px !important;
                 -webkit-app-region: no-drag;
             }
-            div._495084e7a0006942-title,
-            div._495084e7a0006942-container {
+            div.title__49508,
+            div.container__49508 {
                 -webkit-app-region: no-drag;
             }
         }
 
         /* adds extra padding to chat icon on vc */
-        div.cb9592ad77576717-video:not(:has(.cb9592ad77576717-fullScreen)) div._495084e7a0006942-subtitleContainer:has(button._201d5e8a3c09670a-button[aria-label^='Show Chat']) {
+        div.video_cb9592:not(:has(.fullScreen_cb9592)) div.subtitleContainer__49508:has(button.button__201d5[aria-label^='Show Chat']) {
             margin-right: calc(var(--vr-header-snippet-total-padding) - var(--vr-header-snippet-button-padding)) !important;
         }
 
         /* checks if you are searching for a server/app */
-        div.d08938d21d4682b7-container,
-        div.e1147ecfa724a72a-innerContainer {
+        div.container_d08938,
+        div.innerContainer_e1147e {
             /* adds padding to search bar */
-            div._1ac1c54c56e5807c-search {
+            div.search__1ac1c {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
                 margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding));
                 -webkit-app-region: no-drag;
@@ -142,20 +142,20 @@
             
 
             /* adds extra padding if you are looking at search results */
-            &:has(> div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-relative) {
-                ._1ac1c54c56e5807c-search {
+            &:has(> div.headerBar__8a7fc.relative__8a7fc) {
+                .search__1ac1c {
                     padding-right: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding) - 60px);
                 }
             }
         }
 
         /* moves element to "front" */
-        & > div._5e434347c823b592-content {
+        & > div.content__5e434 {
             z-index: 0;
         }
 
         /* top bar variables */
-        & > div.c38106a3f0c3ca76-bar {
+        & > div.bar_c38106 {
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
@@ -164,108 +164,120 @@
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
             /* removes the title bar */
-            & > .c38106a3f0c3ca76-title {
+            & > .title_c38106 {
                 display: none;
             }
         }
 
-        &:has(> div._6e2b9359c6f84cfd-notice) {
-            & > div.c38106a3f0c3ca76-bar {
+        &:has(> div.notice__6e2b9) {
+            & > div.bar_c38106 {
                 top: anchor(top);
             }
         }
 
         /* checks if a thread is opened on the side of your screen */
-        &:has(.f75fb00fb7356cbe-threadSidebarOpen.f75fb00fb7356cbe-threadSidebarFloating) > .c38106a3f0c3ca76-bar {
+        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
             z-index: 0;
         }
     }
 
+    /* removes the extra padding given to the popout menu on vcs */
+    div.popout__0bd4a {
+        div.bar_c38106 {
+            /* changing this value does nothing, but removes the extra padding so oh well */
+            height: 0px
+        }
+        /* fixes padding issue with the close chat button on popout page */
+        section.container__9293f > div.upperContainer__9293f:has([aria-label="Close"]) {
+            margin-right: -220px;
+        }
+    }
+
     /* checks if discord is on a server page */
-    :not(:has(div_5e434347c823b592-page > div.f75fb00fb7356cbe-chat)) div._5e434347c823b592-base > div.c38106a3f0c3ca76-bar {
+    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
         right: 0 !important;
     }
 
     /* adds padding to server list */
-    ul[data-list-id="guildsnav"] > div.ef3116c2da186559-itemsContainer > div.dbd2630aec71879b-stack {
+    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
     
-    section._0b56311ebc6682e2-header div._9293f6b2fc12398a-toolbar,
-    section.c791b281f2fedc32-header div._9293f6b2fc12398a-toolbar,
-    section.c791b281f2fedc32-header div._9293f6b2fc12398a-children,
-    div._6db1d32c47b6ad72-shop div._8067953d83f4b8a8-shopHomeLink,
+    section.header__0b563 div.toolbar__9293f,
+    section.header_c791b2 div.toolbar__9293f,
+    section.header_c791b2 div.children__9293f,
+    div.shop__6db1d div.shopHomeLink__80679,
     /* main thread + all/claimed quest buttons */
-    div._9293f6b2fc12398a-titleWrapper,
+    div.titleWrapper__9293f,
     /* back button on discover pages */
-    div._8a7fc664acf53af6-iconButton,
+    div.iconButton__8a7fc,
     /* "follow" button for announcements */
-    div.f75fb00fb7356cbe-followButton > button,
-    :not(.bfe55a0aaaf62375-videoControls) div._6ec1a06139ec3b27-topic {
+    div.followButton_f75fb0 > button,
+    :not(.videoControls_bfe55a) div.topic__6ec1a {
         /* allows these areas to be clickable */
         -webkit-app-region: no-drag;
     }
 
     /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
-    ._6db1d32c47b6ad72-shop section._9293f6b2fc12398a-showToolbar {
+    .shop__6db1d section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
 
-        ._8067953d83f4b8a8-balanceWidgetMenu {
+        .balanceWidgetMenu__80679 {
             margin-right: 0;
         }
     }
 
-    .div.bfe55a0aaaf62375-videoControls .bfe55a0aaaf62375-topControls {
+    .div.videoControls_bfe55a .topControls_bfe55a {
         z-index: -1;
     }
 
     /* mod view padding */
-    ._656be05658eed04d-profileThemedContainer ._34940b51cd19b69f-topRow {
+    .profileThemedContainer__656be .topRow__34940 {
         align-items: end;
         padding-bottom: 0;
 
-        ._34940b51cd19b69f-closeAction {
+        .closeAction__34940 {
             -webkit-app-region: no-drag;
         }
 
-        ._34940b51cd19b69f-memberNameContainer {
+        .memberNameContainer__34940 {
             padding-bottom: 12px;
         }
     }
 
     /* search/wishlist/orbs on shop page */
-    ._8067953d83f4b8a8-alignedRightContent {
+    .alignedRightContent__80679 {
       position: fixed;
       right: calc(var(--vr-header-snippet-space) - 33px);
       -webkit-app-region: no-drag;
     }
 
     /* orbs balance on quests page */
-    ._1a9cebfbd0c9d0f6-headerBarContent ._44ee9ab6d1ca72b4-container {
+    .headerBarContent__1a9ce .container__44ee9 {
       position: fixed;
       right: calc(var(--vr-header-snippet-space) + 3px);
       -webkit-app-region: no-drag;
     }
 
     /* fixes extra gap of group dm button on friends page */
-    ._9293f6b2fc12398a-toolbar ._133bf5eea8e33a34-inviteToolbar {
+    .toolbar__9293f .inviteToolbar__133bf {
         padding-right: 0px;
     }
 
     /* fixes weird padding issue when searching for an app */
-    ._1eae08c1b97e0c51-sideFilterContainer {
+    .sideFilterContainer__1eae0 {
         position: fixed;
         top: 57px;
     }
 
     /* allows back button on discover pages to be clickable */
-    & ._8a7fc664acf53af6-iconButton {
+    & .iconButton__8a7fc {
         -webkit-app-region: no-drag;
     }
 
     /* allows "follow" button for announcements to be clickable */
-    div.f75fb00fb7356cbe-followButton > button{
+    div.followButton_f75fb0 > button{
         -webkit-app-region: no-drag;
     }
 }
