@@ -77,7 +77,7 @@
             --experiments-padding: 44px;
         }
 
-        /* pre-calculates the total padding needed when including the vencord/checkpoint padding */
+        /* pre-calculates the total padding needed when including the extra buttons */
         --vr-header-snippet-extra-padding: calc(var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding) + var(--experiments-padding));
         --vr-header-snippet-total-padding: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding));
 
