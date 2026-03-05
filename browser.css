@@ -7,6 +7,7 @@
 
     --vencord-padding: 0px;
     --checkpoint-padding: 0px;
+    --experiments-padding: 0px;
 
     /* adds padding to chat pages */
     div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
@@ -32,16 +33,19 @@
     div.base__5e434 {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
-        /* check if users have the vencord or "checkpoint (discord recap) button */
+        /* check if users have the vencord, "checkpoint (discord recap), or experiments button */
         &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
             --vencord-padding: 44px;
         }
         &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
             --checkpoint-padding: 44px;
         }
+        &:has(> div.bar_c38106 > div.trailing_c38106 div.button__85643[aria-label='DevTools']) {
+            --experiments-padding: 44px;
+        }
 
-        /* pre-calculates the total padding needed when including the vencord/checkpoint padding */
-        --vr-header-snippet-extra-padding: calc(var(--vencord-padding) + var(--checkpoint-padding));
+        /* pre-calculates the total padding needed when including the extra buttons */
+        --vr-header-snippet-extra-padding: calc(var(--vencord-padding) + var(--checkpoint-padding) + var(--experiments-padding));
         --vr-header-snippet-total-padding: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding));
 
         /* adds padding to app detail page */
@@ -96,7 +100,7 @@
             /* adds padding to search bar */
             div.search__1ac1c {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
-                margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding));
+                margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding) - 4px);
             }
             
 
@@ -190,13 +194,12 @@
     }
 
     /* search/wishlist/orbs on shop page */
-    .alignedRightContent__80679 {
-        position: fixed;
-        right: calc(var(--vr-header-snippet-space) - 33px);
+    .shop__6db1d div.toolbar__9293f {
+        margin-right: calc(var(--vr-header-snippet-space) - 9px);
     }
 
     /* orbs balance on quests page */
-    .headerBarContent__1a9ce .container__44ee9 {
+    .headerBar__1a9ce .container__44ee9 {
         position: fixed;
         right: calc(var(--vr-header-snippet-space) + 3px);
     }
