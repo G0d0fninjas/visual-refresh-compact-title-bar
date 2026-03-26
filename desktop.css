@@ -64,7 +64,7 @@
 
         /* check if users have the update, vencord, "checkpoint (discord recap), or experiments button */
         /* TODO: find the actual class name */
-        &:has(> div.bar_c38106 > div.trailing_c38106 path.updateIconForeground__49676) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='Update Ready!']) {
             --update-padding: 44px;
         }
         &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
