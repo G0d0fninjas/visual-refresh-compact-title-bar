@@ -211,7 +211,8 @@
     section.header__0b563 div.toolbar__9293f,
     section.header_c791b2 div.toolbar__9293f,
     section.header_c791b2 div.children__9293f,
-    div.shop__6db1d div.shopHomeLink__80679,
+    /* shop categories */
+    div.shop__6db1d div.tabs__354ec,
     /* main thread + all/claimed quest buttons */
     div.titleWrapper__9293f,
     /* back button on discover pages */
@@ -289,5 +290,11 @@
         div.streamQualityIndicator__30845 {
             margin-right: calc(var(--vr-header-snippet-space) - 10px);
         }
+    }
+
+    /* nitro home page */
+    div.applicationStore_f07d62 div.toolbar__9293f {
+        margin-right: var(--vr-header-snippet-space);
+        -webkit-app-region: no-drag;
     }
 }
