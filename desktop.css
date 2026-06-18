@@ -67,9 +67,10 @@
         &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='Update Ready!']) {
             --update-padding: 36px;
         }
-        &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='Vencord Toolbox']) {
-            --vencord-padding: 36px;
-        }
+        /* not really sure why, but this padding was messing up icon positioning for new group dm, vc chat, etc */
+        /* &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-icon) { */
+            /* --vencord-padding: 36px; */
+        /* } */
         &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
             --checkpoint-padding: 36px;
         }
