@@ -34,14 +34,14 @@
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the vencord, "checkpoint (discord recap), or experiments button */
-        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
-            --vencord-padding: 44px;
+        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-icon) {
+            --vencord-padding: 36px;
         }
         &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
-            --checkpoint-padding: 44px;
+            --checkpoint-padding: 36px;
         }
-        &:has(> div.bar_c38106 > div.trailing_c38106 div.button__85643[aria-label='DevTools']) {
-            --experiments-padding: 44px;
+        &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='DevTools']) {
+            --experiments-padding: 36px;
         }
 
         /* pre-calculates the total padding needed when including the extra buttons */
