@@ -203,7 +203,7 @@
     }
 
     /* adds padding to server list */
-    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+    div[data-list-id="guildsnav"] > div.stack_dbd263.scroller_ef3116 {
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
