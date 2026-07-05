@@ -117,7 +117,7 @@
             div.callContainer_cb9592:not(.fullScreen_cb9592) {
                 div.upperContainer__9293f {
                     div.toolbar__49508 {
-                        margin-right: calc(var(--vr-header-snippet-total-padding) - 13px);
+                        padding-right: calc(var(--vr-header-snippet-total-padding) - 13px);
                         -webkit-app-region: no-drag;
                     }
                     div.title__49508,
