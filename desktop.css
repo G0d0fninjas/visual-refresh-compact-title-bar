@@ -179,6 +179,14 @@
         }
     }
 
+    /* checks if mod view sidebar is opened */
+    :has(.guildSidebar_f75fb0) {
+        div.trailing_c38106 {
+            /* couldn't find a way to dynamically change this, hopefully the mod view is always 480px wide */
+            right: 480px;
+        }
+    }
+
     /* removes the extra padding given to the popout menu on vcs */
     div.popout__0bd4a {
         div.bar_c38106 {
