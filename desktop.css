@@ -291,4 +291,9 @@
         margin-right: calc(var(--vr-header-snippet-total-padding) - 31px);
         -webkit-app-region: no-drag;
     }
+
+    /* quest progress for activities */
+    div.header_feae96 div.questProgress_feae96 {
+        margin-right: calc(var(--vr-header-snippet-total-padding) - 8px);
+    }
 }
