@@ -10,115 +10,112 @@
     --experiments-padding: 0px;
 
     /* adds padding to chat pages */
-    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
+    div.chat_z_gUBg0:not(.threadSidebarOpen_z_gUBg0),
     /* adds padding to friend list page */
-    main.container__133bf,
+    main.container_zrUwGA,
     /* adds padding to thread sidebar */
-    div.chatLayerWrapper__01ae2 {
-        section.container__9293f {
+    div.chatLayerWrapper_FrbQJp {
+        section.container_ybUK7Z {
             padding-right: var(--vr-header-snippet-space);
         }
     }
 
     /* adds padding to servers/app pages */
-    div.headerBar__8a7fc.overlay__8a7fc {
+    div.headerBar_Y0eJLL.overlay_Y0eJLL {
         padding-right: var(--vr-header-snippet-space);
     }
 
     /* livestream video controls */
-    div.videoControls_bfe55a div.subtitleContainer__49508 {
+    div.videoControls_rTsZa_ div.subtitleContainer_neq5ug {
         padding-right: calc(var(--vr-header-snippet-space) - 20px);
     }
 
-    div.base__5e434 {
+    div.base_pog62O {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
-        /* check if users have the vencord, "checkpoint (discord recap), or experiments button */
-        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-icon) {
+        /* check if users have the vencord, or experiments button */
+        &:has(> div.bar_3zSH5d > div.trailing_3zSH5d .vc-toolbox-icon) {
             --vencord-padding: 36px;
         }
-        &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
-            --checkpoint-padding: 36px;
-        }
-        &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='DevTools']) {
+        &:has(> div.bar_3zSH5d > div.trailing_3zSH5d div.clickable_fErCLM[aria-label='DevTools']) {
             --experiments-padding: 36px;
         }
 
         /* pre-calculates the total padding needed when including the extra buttons */
-        --vr-header-snippet-extra-padding: calc(var(--vencord-padding) + var(--checkpoint-padding) + var(--experiments-padding));
+        --vr-header-snippet-extra-padding: calc(var(--vencord-padding) + var(--experiments-padding));
         --vr-header-snippet-total-padding: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding));
 
         /* adds padding to app detail page */
-        div.detailHeaderContainer_e1147e {
+        div.detailHeaderContainer_H11xQD {
           margin-right: calc(var(--vr-header-snippet-total-padding) - 12px);
         }
 
-        div.subtitleContainer_f75fb0,
-        main.container__133bf {
+        div.subtitleContainer_z_gUBg0,
+        main.container_zrUwGA {
             /* adds padding to entire top container */
-            section.container__9293f {
+            section.container_ybUK7Z {
                 padding-right: var(--vr-header-snippet-total-padding);
             }
         }
 
         /* checks if thread sidebar is open */
-        &:has(div > div.chatLayerWrapper__01ae2) {
+        &:has(div > div.chatLayerWrapper_FrbQJp) {
             /* removes extra padding given to search bar */
-            div.subtitleContainer_f75fb0 > section.container__9293f {
+            div.subtitleContainer_z_gUBg0 > section.container_ybUK7Z {
                 padding-right: 8px;
             }
 
             /* adds padding to the thread buttons */
-            div.container__01ae2 > section.container__9293f {
+            div.container_FrbQJp > section.container_ybUK7Z {
                 padding-right: var(--vr-header-snippet-total-padding);
             }
 
             /* adds padding to the vc chat page in fullscreen */
-            &:has(> div.content__5e434 > div.hidden__5e434) div.container__01ae2 > section.container__9293f {
+            &:has(> div.content_pog62O > div.hidden_pog62O) div.container_FrbQJp > section.container_ybUK7Z {
                 padding-right: var(--vr-header-snippet-button-padding);
             }
         }
 
         /* adds extra spacing to the orbs button on orbs/shop page */
-        div.container__44ee9 {
+        div.container_CHR0Z4 {
             padding-right: calc(var(--vr-header-snippet-extra-padding));
         }
 
         /* livestream header on vc */
-        div.upperContainer__9293f div.toolbar__49508 {
+        div.upperContainer_ybUK7Z div.toolbar_neq5ug {
             margin-right: -173px !important;
         }  
 
         /* adds extra padding to chat icon on vc */
-        div.video_cb9592:not(:has(.fullScreen_cb9592)) div.subtitleContainer__49508:has(button.button__201d5[aria-label^='Show Chat']) {
+        div.video_hbKzX7:not(:has(.fullScreen_hbKzX7)) div.subtitleContainer_neq5ug:has(button.button_9OQtot[aria-label^='Show Chat']) {
             margin-right: calc(var(--vr-header-snippet-total-padding) - var(--vr-header-snippet-button-padding)) !important;
         }
 
         /* checks if you are searching for a server/app */
-        div.container_d08938,
-        div.innerContainer_e1147e {
+        div.container_67Xl1N,
+        div.innerContainer_H11xQD {
             /* adds padding to search bar */
-            div.search__1ac1c {
+            div.search_B1ffsk {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
                 margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding) - 4px);
             }
             
 
             /* adds extra padding if you are looking at search results */
-            &:has(> div.headerBar__8a7fc.relative__8a7fc) {
-                .search__1ac1c {
+            &:has(> div.headerBar_Y0eJLL.relative_Y0eJLL) {
+                .search_B1ffsk {
                     padding-right: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding) - 60px);
                 }
             }
         }
         
         /* moves element to "front" */
-        & > div.content__5e434 {
+        & > div.content_pog62O {
             z-index: 0;
         }
 
         /* top bar variables */
-        & > div.bar_c38106 {
+        & > div.bar_3zSH5d {
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
@@ -127,33 +124,33 @@
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
             /* removes the title bar */
-            & > .title_c38106 {
+            & > .title_3zSH5d {
                 display: none;
             }
         }
 
-        &:has(> div.notice__6e2b9) {
-            & > div.bar_c38106 {
+        &:has(> div.notice_Q02kKo) {
+            & > div.bar_3zSH5d {
                 top: anchor(top);
             }
         }
 
         /* inbox and help button variables */
-        div.trailing_c38106 {
+        div.trailing_3zSH5d {
             background: none;
             border: none;
             height: var(--custom-channel-header-height);
         }
 
         /* checks if a thread is opened on the side of your small screen */
-        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
+        &:has(.threadSidebarOpen_z_gUBg0.threadSidebarFloating_z_gUBg0) > .bar_3zSH5d {
             z-index: 0;
         }
     }
 
     /* removes the extra padding given to the popout menu on vcs */
-    div.popout__0bd4a {
-        section.container__9293f > div.upperContainer__9293f {
+    div.popout_9Aa-7R {
+        section.container_ybUK7Z > div.upperContainer_ybUK7Z {
             /* both areas have slightly different padding for some reason */
             :has([aria-label="Show Chat"]) {
                 margin-right: -64px;
@@ -165,52 +162,52 @@
     }
 
     /* checks if discord is on a server page */
-    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
+    :not(:has(div.page_pog62O > div.chat_z_gUBg0)) div.base_pog62O > div.bar_3zSH5d {
         right: 0 !important;
     }
 
     /* adds padding to server list */
-    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+    ul[data-list-id="guildsnav"] > div.itemsContainer_5dqHTG > div.stack_TWWX0S {
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
     /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
-    .shop__6db1d section.showToolbar__9293f {
+    .shop_Mqg79R section.showToolbar_ybUK7Z {
         padding-right: var(--vr-header-snippet-space);
 
-        .balanceWidgetMenu__80679 {
+        .balanceWidgetMenu_ViLURN {
             margin-right: 0;
         }
     }
 
     /* mod view padding */
-    .profileThemedContainer__656be .topRow__34940 {
+    .profileThemedContainer_MLLsfk .topRow_ebzPvR {
         align-items: end;
         padding-bottom: 0;
 
-        .memberNameContainer__34940 {
+        .memberNameContainer_ebzPvR {
             padding-bottom: 12px;
         }
     }
 
     /* search/wishlist/orbs on shop page */
-    .shop__6db1d div.toolbar__9293f {
+    .shop_Mqg79R div.toolbar_ybUK7Z {
         margin-right: calc(var(--vr-header-snippet-space) - 9px);
     }
 
     /* orbs balance on quests page */
-    .headerBar__1a9ce .container__44ee9 {
+    .headerBar_tSk_LE .container_CHR0Z4 {
         position: fixed;
         right: calc(var(--vr-header-snippet-space) + 3px);
     }
 
     /* fixes extra gap of group dm button on friends page */
-    .toolbar__9293f .inviteToolbar__133bf {
+    .toolbar_ybUK7Z .inviteToolbar_zrUwGA {
         padding-right: 0px;
     }
 
     /* fixes weird padding issue when searching for an app */
-    .sideFilterContainer__1eae0 {
+    .sideFilterContainer_efZcjx {
         position: fixed;
         top: 57px;
     }

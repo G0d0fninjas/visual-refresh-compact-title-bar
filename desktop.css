@@ -162,7 +162,6 @@
             }
         }
 
-        /* TODO: find new notice name */
         &:has(> div.notice_Q02kKo) {
             & > div.bar_3zSH5d {
                 top: anchor(top);
