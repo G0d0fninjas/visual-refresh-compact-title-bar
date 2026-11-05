@@ -195,7 +195,7 @@
         }
         /* fixes padding issue with the close chat button on popout page */
         section.container__9293f > div.upperContainer__9293f:has([aria-label="Close"]) {
-            margin-right: -220px;
+            margin-right: -200px;
         }
     }
 
