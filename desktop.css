@@ -206,9 +206,9 @@
 
     /* server settings page */
     div.systemBar_3zSH5d,
-    /* TODO: find what this header is (channels and roles menu header)*/
-    section.header__0b563 div.toolbar_ybUK7Z,
-    /* TODO: find what this header is */
+    /* channels and roles menu (commenting out temporarily since it doesnt look like its needed anymore) */
+    /* section.header_xTP3zy div.toolbar_ybUK7Z, */
+    /* TODO: find what this header is (fix applications) */
     section.header_c791b2 div.toolbar_ybUK7Z,
     section.header_c791b2 div.children_ybUK7Z,
     /* shop categories */
@@ -219,7 +219,7 @@
     div.iconButton_Y0eJLL,
     /* "follow" button for announcements */
     div.followButton_z_gUBg > button,
-    /* TODO: find where topic is */
+    /* TODO: find where topic is (initial commit) */
     :not(.videoControls_rTsZa_) div.topic__6ec1a {
         /* allows these areas to be clickable */
         -webkit-app-region: no-drag;
