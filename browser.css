@@ -211,4 +211,9 @@
         position: fixed;
         top: 57px;
     }
+
+    /* settings icon on server hub page */
+    div.toolbar_ybUK7Z:has(> button[aria-label='Settings']) {
+        margin-right: calc(var(--vr-header-snippet-total-padding) - 31px);
+    }
 }

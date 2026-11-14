@@ -294,4 +294,10 @@
     div.header_Sh_Ht6 div.questProgress_Sh_Ht6 {
         margin-right: calc(var(--vr-header-snippet-total-padding) - 8px);
     }
+
+    /* settings icon on server hub page */
+    div.toolbar_ybUK7Z:has(> button[aria-label='Settings']) {
+        margin-right: calc(var(--vr-header-snippet-total-padding) - 31px);
+        -webkit-app-region: no-drag;
+    }
 }
