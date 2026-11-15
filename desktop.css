@@ -129,7 +129,7 @@
             /* adds padding to search bar */
             div.search_B1ffsk {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
-                margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding) - 4px);
+                margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding) - 8px);
                 -webkit-app-region: no-drag;
             }
             
@@ -137,7 +137,7 @@
             /* adds extra padding if you are looking at search results */
             &:has(> div.headerBar_Y0eJLL.relative_Y0eJLL) {
                 .search_B1ffsk {
-                    padding-right: calc(var(--vr-header-snippet-total-padding) - 60px);
+                    padding-right: calc(var(--vr-header-snippet-total-padding) - 16px);
                 }
             }
         }
@@ -297,7 +297,12 @@
 
     /* settings icon on server hub page */
     div.toolbar_ybUK7Z:has(> button[aria-label='Settings']) {
-        margin-right: calc(var(--vr-header-snippet-total-padding) - 31px);
+        margin-right: calc(var(--vr-header-snippet-total-padding) - 16px);
         -webkit-app-region: no-drag;
+    }
+
+    /* strange scrollbar on server hub page */
+    div.page_QQ_HWZ {
+        height: 99%;
     }
 }
