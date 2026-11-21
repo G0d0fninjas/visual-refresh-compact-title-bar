@@ -300,9 +300,4 @@
         margin-right: calc(var(--vr-header-snippet-total-padding) - 16px);
         -webkit-app-region: no-drag;
     }
-
-    /* strange scrollbar on server hub page */
-    div.page_QQ_HWZ {
-        height: 99%;
-    }
 }
