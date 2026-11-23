@@ -209,7 +209,8 @@
     /* channels and roles menu (commenting out temporarily since it doesnt look like its needed anymore) */
     /* section.header_xTP3zy div.toolbar_ybUK7Z, */
     section.title_z_gUBg div.toolbar_ybUK7Z,
-    section.title_z_gUBg div.children_ybUK7Z,
+    /* channel description */
+    section.title_z_gUBg div.topic_pVbL3l,
     /* shop categories */
     div.shop_Mqg79R div.children_ybUK7Z,
     /* main thread + all/claimed quest buttons */
